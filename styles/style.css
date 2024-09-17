@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.navbar{
+    background-color: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar-logo{
+    background-color: #7780ff;
+    background-image: linear-gradient(to top, #0873ff 0%, #99d1ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-gem{
+    margin-right: 0.5rem;
+}
+
+.navbar-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar-item{
+    height: 50px;
+    padding: 12px 12px;
+    border-radius: 10px;
+}
+
+.navbar-item a{
+    padding: 0px;
+}
+
+.navbar-item:hover{
+    box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 6px #150b97;
+
+    background-color: #332ab1;
+
+    transform: translate(-3px, -3px);
+
+    transition: transform 0.3s, box-shadow 1s;
+}
+
+.navbar-links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+/* Principal */
+body{
+    background-color: #141414;
+}
+
+.services{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services h1{
+    background-color: #0873ff;
+    background-image: linear-gradient(to right, #0873ff 0%, #7a99ff 0%, #7f88ff 21%, #8587f9 52%, #5d55cf 78%, #332ab1 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+}
+
+.services-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-all{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(17,17,17, 0.6) 100%), url('../imagens/projetos.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.services-all:nth-child(2){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(17,17,17, 0.6) 100%), url('../imagens/tarefas.jpg');
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.services-all:nth-child(3){
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgb(17,17,17, 0.6) 100%), url('../imagens/compras.jpg');
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.services h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services-all button{
+    width: 100px;
+    color: #fff;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 4px;
+    background: #626cf7;
+    position: absolute;
+    top: 390px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services-all:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
