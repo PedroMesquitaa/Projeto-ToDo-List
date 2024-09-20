@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/tarefas.css">
     <link rel="stylesheet" href="../styles/media-query.css">
-    <title>To Do List</title>
+    <title>To-Do List</title>
 </head>
 <body>
     <header>
         <!-- NAVBAR -->
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="/" id="navbar-logo">SISTEMAS</a>
+                <a href="/" id="navbar-logo">To-Do list</a>
                 <div class="navbar-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -22,21 +22,15 @@
                     
                     <li class="navbar-item">
                         <a href="../index.html" class="navbar-links"> Home </a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="projetos.html" class="navbar-links"> Projetos </a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="compras.html" class="navbar-links"> Lista de compras </a>
-                    </li>
                 </ul>
             </div>
         </nav>
+        <div class="linha2"></div>
     </header>
     <main>
         <div class="container">
             <div class="todo" id="importantes">
-                <h2 id="alta">Tarefas de alta importancia</h2>
+                <h2 id="alta">To-Do list</h2>
                 <div class="row">
                     <input type="text" id="input-box" placeholder="Adicione seu texto">
                     <button onclick="addTask()" id="importantes2">Add</button>
@@ -48,37 +42,6 @@
                 </ul>
             </div>
         </div>
-
-        <div class="container">
-            <div class="todo" id="media">
-                <h2 id="media2">Tarefas de média importancia</h2>
-                <div class="row">
-                    <input type="text" id="input-box2" placeholder="Adicione seu texto">
-                    <button onclick="addTask2()" id="media3">Add</button>
-                </div>
-                <ul id="list-container2">
-                   <!-- <li class="checked">Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li> -->
-                </ul>
-            </div>
-        </div>
-        
-        <div class="container">
-            <div class="todo" id="baixa">
-                <h2 id="baixa2">Tarefas de baixa importancia</h2>
-                <div class="row">
-                    <input type="text" id="input-box3" placeholder="Adicione seu texto">
-                    <button onclick="addTask3()" id="baixa3">Add</button>
-                </div>
-                <ul id="list-container3">
-                   <!-- <li class="checked">Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li> -->
-                </ul>
-            </div>
-        </div>
-
     </main>
     <script src="../script.js"></script>
 </body>

@@ -22,7 +22,7 @@ menu.addEventListener('click', function(){
 });
 
 
-/*functions da lista de tarefas alta importancia*/
+/*functions da lista de tarefas*/
 function addTask(){
     if(inputBox.value === ''){
         alert("Você deve escrever algo!");
@@ -64,97 +64,5 @@ inputBox.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
         event.preventDefault();
         addTask();
-    }
-});
-
-/*functions da lista de tarefas Média Importancia*/
-
-function addTask2(){
-    if(inputBox2.value === ''){
-        alert("Você deve escrever algo!");
-    }
-    else{
-        let li2 = document.createElement("li");
-        li2.innerHTML = inputBox2.value;
-        listContainer2.appendChild(li2);
-        let span2 = document.createElement("span");
-        span2.innerHTML = "\u00d7";
-        li2.appendChild(span2);
-    }
-    inputBox2.value = "";
-    saveData2();
-}
-
-listContainer2.addEventListener("click", function(e){
-    if(e.target.tagName === "LI"){
-        e.target.classList.toggle("checked");
-        saveData2();
-    }
-    else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
-        saveData2();
-    }
-}, false);
-
-function saveData2(){
-    localStorage.setItem("data2", listContainer2.innerHTML);
-}
-
-function showTask2(){
-    listContainer2.innerHTML = localStorage.getItem("data2");
-}
-
-showTask2();
-
-inputBox2.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        addTask2();
-    }
-});
-
-/*functions da lista de tarefas baixa */
-
-function addTask3(){
-    if(inputBox3.value === ''){
-        alert("Você deve escrever algo!");
-    }
-    else{
-        let li3 = document.createElement("li");
-        li3.innerHTML = inputBox3.value;
-        listContainer3.appendChild(li3);
-        let span3 = document.createElement("span");
-        span3.innerHTML = "\u00d7";
-        li3.appendChild(span3);
-    }
-    inputBox3.value = "";
-    saveData3();
-}
-
-listContainer3.addEventListener("click", function(e){
-    if(e.target.tagName === "LI"){
-        e.target.classList.toggle("checked");
-        saveData3();
-    }
-    else if(e.target.tagName === "SPAN"){
-        e.target.parentElement.remove();
-        saveData3();
-    }
-}, false);
-
-function saveData3(){
-    localStorage.setItem("data3", listContainer3.innerHTML);
-}
-
-function showTask3(){
-    listContainer3.innerHTML = localStorage.getItem("data3");
-}
-
-showTask3();
-
-inputBox3.addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-        event.preventDefault();
-        addTask3();
     }
 });
