@@ -4,11 +4,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Kumbh Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar{
-    background-color: #131313;
+    background-color: white;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -31,8 +31,7 @@
 }
 
 #navbar-logo{
-    background-color: #7780ff;
-    background-image: linear-gradient(to top, #0873ff 0%, #99d1ff 100%);
+    background-color: black;
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -63,17 +62,28 @@
 }
 
 .navbar-item a{
-    padding: 0px;
+    color: #fff;
+    padding: 1em 2em;
+    outline: none;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 0 black;
 }
 
-.navbar-item:hover{
-    box-shadow: 0px 0px 0px 2px white, 0px 0px 0px 6px #150b97;
+.navbar-item a:hover{
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
 
-    background-color: #332ab1;
-
-    transform: translate(-3px, -3px);
-
-    transition: transform 0.3s, box-shadow 1s;
+.navbar-item a:active{
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
 }
 
 .navbar-links{
@@ -86,13 +96,17 @@
     height: 100%;
 }
 
+.linha{
+    width: 100%;
+    border-bottom: 1px solid #000000;
+}
 /* Principal */
 body{
-    background-color: #141414;
+    background-color: white;
 }
 
 .services{
-    background: #141414;
+    background: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,7 +132,7 @@ body{
 }
 
 .services-all{
-    margin: 1rem;
+    margin-top: 3rem;
     height: 525px;
     width: 400px;
     border-radius: 4px;
@@ -146,21 +160,29 @@ body{
 }
 
 .services-all button{
-    width: 100px;
     color: #fff;
-    padding: 10px 20px;
+    padding: 1em 2em;
     outline: none;
-    border-radius: 4px;
-    background: #626cf7;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10em;
     position: absolute;
     top: 390px;
     left: 30px;
-    font-size: 1rem;
+    font-size: 17px;
+    font-weight: 600;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0 0 black;
 }
 
-.services-all:hover{
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
+.services-all button:hover{
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+.services-all button:active{
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
 }
